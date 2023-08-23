@@ -47,3 +47,16 @@ header nav {
   justify-content: space-around;
   align-items: center;
 }
+
+main {
+  margin: 15vw;
+  padding-right: 320px;
+  background-image: url(https://picsum.photos/id/1060/300/400);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  min-height: 400px;
+}
+main h1 {
+  font-weight: bold;
+}
