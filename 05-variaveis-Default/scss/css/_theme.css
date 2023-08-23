@@ -59,4 +59,19 @@ main {
 }
 main h1 {
   font-weight: bold;
+  font-size: 48px;
+}
+main h1 span {
+  color: #00f;
+}
+main h1 Small {
+  display: block;
+  font-size: 24px;
+  font-weight: 100;
+}
+main P {
+  margin-bottom: 60px;
+}
+main .button {
+  padding: 16px 64px;
 }
