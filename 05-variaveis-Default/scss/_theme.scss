@@ -61,6 +61,20 @@ main{
     min-height: 400px;
     h1{
         font-weight: bold;
+        font-size: 48px;
+        span{
+            color: $corPrimaria;
+        }
+        Small {
+            display: block; 
+            font-size: 24px;
+            font-weight: 100;
+        }
     }
-
+P{
+    margin-bottom: 60px;
+}
+.button{
+    padding: 16px 64px;
+}
 }
