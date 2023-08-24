@@ -7,11 +7,11 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #F00;
+  color: #39bb59;
 }
 
 .button {
-  background-color: #F00;
+  background-color: #39bb59;
   color: #fff;
   padding: 8px 32px;
   text-transform: uppercase;
@@ -19,11 +19,11 @@ a:hover {
   border-radius: 10px;
 }
 .button:hover {
-  background-color: rgba(255, 0, 0, 0.8);
+  background-color: rgba(57, 187, 89, 0.8);
 }
 
 #logo {
-  color: #F00;
+  color: #39bb59;
   font-weight: bold;
   font-size: 24px;
   text-transform: uppercase;
@@ -46,4 +46,41 @@ header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+main {
+  margin: 15vw;
+  padding-right: 320px;
+  background-image: url(https://picsum.photos/id/1060/300/400);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  min-height: 400px;
+}
+main h1 {
+  font-weight: bold;
+  font-size: 48px;
+}
+main h1 span {
+  color: #39bb59;
+}
+main h1 Small {
+  display: block;
+  font-size: 24px;
+  font-weight: 100;
+}
+main P {
+  margin-bottom: 60px;
+}
+main .button {
+  padding: 16px 64px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  font-size: 12px;
+  color: #686363;
 }
