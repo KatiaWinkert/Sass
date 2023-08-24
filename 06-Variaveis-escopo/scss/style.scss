@@ -1,19 +1,27 @@
+$color: #7f808c;
+$primary: #1a8a0b;
+$background-color: #89ebaf55;
+
+
 *{
     box-sizing: border-box;
 }
 body {
+    
     margin: 0;
     font-family: sans-serif;
-    color: #7f808c;
+    color: $color;
 }
 
 #chat {
+    
     display: flex;
     flex-direction: column;
     margin: 20px;
     padding: 0;
     list-style: none;
     li{
+        background-color: $background-color;
         display: flex;
         margin-bottom: 32px;
         .avatar {
@@ -26,8 +34,9 @@ body {
             }
         }
         .message {
+             
             flex: 1;
-            background-color: #83e298;
+            background-color: $background-color;
             padding: 16px;
             border-radius: 8px;
             border-bottom-left-radius: 0;
@@ -57,6 +66,23 @@ body {
                     cursor: pointer;
                 }
                 
+            }
+        }
+        &.me{
+            $background-color: $primary;
+            flex-direction: row-reverse;
+            color: #ffff;
+            .message{
+                background-color: $background-color;
+                border-bottom-left-radius: 10px;
+                border-top-right-radius: 0;
+                ::selection{
+                    background: #fff;
+                    color: $primary;
+                }
+            }
+            strong{
+                display: none;
             }
         }
     }
