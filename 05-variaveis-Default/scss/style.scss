@@ -1,4 +1,4 @@
-@use "theme" with (
-    $corPrimaria: #F00, 
+@use "_theme" with(
+    $corPrimaria: rgb(57, 187, 89), 
     $cantos: 10px
 );
