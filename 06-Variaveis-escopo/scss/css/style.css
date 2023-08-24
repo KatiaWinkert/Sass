@@ -16,6 +16,7 @@ body {
   list-style: none;
 }
 #chat li {
+  background-color: #89ebaf55;
   display: flex;
   margin-bottom: 32px;
 }
@@ -30,7 +31,7 @@ body {
 }
 #chat li .message {
   flex: 1;
-  background-color: #83e298;
+  background-color: #89ebaf55;
   padding: 16px;
   border-radius: 8px;
   border-bottom-left-radius: 0;
@@ -60,4 +61,20 @@ body {
   width: 16px;
   opacity: 0.5;
   cursor: pointer;
+}
+#chat li.me {
+  flex-direction: row-reverse;
+  color: #ffff;
+}
+#chat li.me .message {
+  background-color: #1a8a0b;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 0;
+}
+#chat li.me .message ::selection {
+  background: #fff;
+  color: #1a8a0b;
+}
+#chat li.me strong {
+  display: none;
 }
