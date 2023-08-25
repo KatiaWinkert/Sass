@@ -1,3 +1,5 @@
+@use"cantos";
+
 $color: #7f808c;
 $primary: #1a8a0b;
 $background-color: #89ebaf55;
@@ -29,7 +31,7 @@ body {
             display: flex;
             align-items: flex-end;
             img {
-                border-radius: 50%;
+                @include cantos.circulo;
                 width: 48px;
             }
         }
@@ -38,7 +40,7 @@ body {
             flex: 1;
             background-color: $background-color;
             padding: 16px;
-            border-radius: 8px;
+            @include cantos.arredondado;
             border-bottom-left-radius: 0;
                strong {
             color: #25462f
@@ -74,7 +76,7 @@ body {
             color: #ffff;
             .message{
                 background-color: $background-color;
-                border-bottom-left-radius: 10px;
+                border-bottom-left-radius: cantos.$raio;
                 border-top-right-radius: 0;
                 ::selection{
                     background: #fff;
