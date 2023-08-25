@@ -1,8 +1,10 @@
-@use"cantos";
+@use"forward" with(
+    $primary: #da691f
+);
 
-$color: #7f808c;
-$primary: #1a8a0b;
-$background-color: #89ebaf55;
+
+
+
 
 
 *{
@@ -12,7 +14,7 @@ body {
     
     margin: 0;
     font-family: sans-serif;
-    color: $color;
+    color: forward.$primary;
 }
 
 #chat {
@@ -23,7 +25,7 @@ body {
     padding: 0;
     list-style: none;
     li{
-        background-color: $background-color;
+        background-color: #fff;
         display: flex;
         margin-bottom: 32px;
         .avatar {
@@ -31,16 +33,16 @@ body {
             display: flex;
             align-items: flex-end;
             img {
-                @include cantos.circulo;
+                @include forward.circulo;
                 width: 48px;
             }
         }
         .message {
              
             flex: 1;
-            background-color: $background-color;
+            background-color: forward.$primaryColor;
             padding: 16px;
-            @include cantos.arredondado;
+            @include forward.arredondado;
             border-bottom-left-radius: 0;
                strong {
             color: #25462f
@@ -71,16 +73,16 @@ body {
             }
         }
         &.me{
-            $background-color: $primary;
+            $background-color: forward.$primary;
             flex-direction: row-reverse;
             color: #ffff;
             .message{
                 background-color: $background-color;
-                border-bottom-left-radius: cantos.$raio;
+                border-bottom-left-radius: forward.$raio;
                 border-top-right-radius: 0;
                 ::selection{
                     background: #fff;
-                    color: $primary;
+                    color: forward.$primary;
                 }
             }
             strong{
